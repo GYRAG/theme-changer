@@ -6,7 +6,7 @@ import './App.css';
 function App() {
   const [theme, setTheme] = useLocalStorage('theme', 'light');
   const windowSize = useWindowSize();
-  const isDesktop = windowSize.width > 768; // Adjust the breakpoint as per your needs
+  const isDesktop = windowSize.width > 768; 
 
   useEffect(() => {
     document.body.classList.remove('light', 'dark');
